@@ -31,7 +31,7 @@ export default function User() {
             <span className="userShowTitle">Student Details</span>
             <div className="userShowInfo">
               <PermIdentity className="userShowIcon" />
-              <span className="userShowInfoTitle">Devayani Rajesh Chandane</span>
+              <span className="userShowInfoTitle">Devayani Chandane</span>
             </div>
             <div className="userShowInfo">
               <CalendarToday className="userShowIcon" />
@@ -67,7 +67,7 @@ export default function User() {
                 <label>Full Name</label>
                 <input
                   type="text"
-                  placeholder="Devayani Rajesh Chandane"
+                  placeholder="Devayani Chandane"
                   className="userUpdateInput"
                 />
               </div>

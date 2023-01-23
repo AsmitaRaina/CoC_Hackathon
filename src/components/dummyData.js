@@ -66,12 +66,12 @@ export const userData = [
 
   export const userRows = [
 
-{ id: 1, lastName: 'Snow', firstName: 'Jon', regid:'211071035',email:'drchandane_b21@ce.vjti.ac.in'},
-{ id: 2, lastName: 'Snow', firstName: 'Jon', regid:'211071035',email:'drchandane_b21@ce.vjti.ac.in'},
-{ id: 3, lastName: 'Snow', firstName: 'Jon', regid:'211071035',email:'drchandane_b21@ce.vjti.ac.in'},
-{ id: 4, lastName: 'Snow', firstName: 'Jon', regid:'211071035',email:'drchandane_b21@ce.vjti.ac.in'},
-{ id: 5, lastName: 'Snow', firstName: 'Jon', regid:'211071035',email:'drchandane_b21@ce.vjti.ac.in'}
-   
+{ id: 1, lastName: 'Chandane', firstName: 'Devayani', regid:'211071035',email:'drchandane_b21@ce.vjti.ac.in'},
+{ id: 2, lastName: 'Chandane', firstName: 'Devayani', regid:'211071035',email:'drchandane_b21@ce.vjti.ac.in'},
+{ id: 3, lastName: 'Chandane', firstName: 'Devayani', regid:'211071035',email:'drchandane_b21@ce.vjti.ac.in'},
+{ id: 4, lastName: 'Chandane', firstName: 'Devayani', regid:'211071035',email:'drchandane_b21@ce.vjti.ac.in'},
+{ id: 5, lastName: 'Chandane', firstName: 'Devayani', regid:'211071035',email:'drchandane_b21@ce.vjti.ac.in'}
+
 ];
   
 

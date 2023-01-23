@@ -39,7 +39,7 @@ export default function Sidebar2() {
         <div className="sidebarMenu">
           <h3 className="sidebarTitle">Admin</h3>
           <ul className="sidebarList">
-            <Link to="/userlist" className="link">
+            <Link to="/rules" className="link">
               <li className="sidebarListItem">
                 <SpeakerNotesIcon className="sidebarIcon" />
                 Rules & Regulations
