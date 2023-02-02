@@ -1,18 +1,16 @@
 import {Link} from 'react-router-dom';
-const BlogList = ({blogs, title}) => {
-    // const blogs = props.blog;
-    // const title = props.title;
+const ComplaintList = ({comps, title}) => {
     
     return (  
         <div className="blog-list">
             <h2>{title}</h2>
-            {blogs.map((blog)=>(
-                <div className="blog-preview" key = {blog.id}>
-                    <Link to = {`/blogs/${blog.id}`}>
-                    <h2>{blog.venue}</h2>
-                    <p>Organiser: {blog.organiser}</p>
-                    <p> {blog.start_time} to {blog.end_time}</p>
-                    <p>{blog.date}</p>
+            {comps.map((comp)=>(
+                <div className="blog-preview" key = {comp.id}>
+                    <Link to = {`/comps/${comp.id}`}>
+                    <h2>{comp.name}</h2>
+                    <p> {comp.room_no}</p>
+                    <p>{comp.block}</p>
+                    <p>{comp.date}</p>
                     </Link>
                 </div>
             ))}
@@ -20,4 +18,4 @@ const BlogList = ({blogs, title}) => {
     );
 }
  
-export default BlogList;
+export default ComplaintList;

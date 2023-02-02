@@ -42,7 +42,7 @@ const onMouseLeave=()=>{
          <ul className={click ? 'nav-menu active' :'nav-menu'}>
             <li className="nav-item">
             
-            <Link to='/' className="nav-links" onClick={closeMobileMenu}>Home</Link>
+            <Link to='home' className="nav-links" onClick={closeMobileMenu}>Home</Link>
             </li>
             <li className="nav-item">
             

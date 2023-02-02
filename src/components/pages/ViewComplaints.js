@@ -1,18 +1,18 @@
 import React from 'react';
 import '../../App.css';
-import BlogList from '../BlogList';
+import ComplaintList from '../ComplaintList';
 import useFetch from '../useFetch';
 
 
 export default function ViewComplaints(){
-    const {data: blogs, isPending, error} = useFetch("http://localhost:8000/blogs");
+    const {data: comps, isPending, error} = useFetch("http://localhost:8000/comps");
     return(
         <>
         <div className='home'>
             {/* <h1 style={color='black'}>All Events</h1> */}
             {error && <div>{error}</div>}
             {isPending && <div>Loading...</div>}
-            {blogs && <BlogList blogs = {blogs} title='All Events'/>}
+            {comps && <ComplaintList comps = {comps} title='Complaints'/>}
             
         </div>
         </>

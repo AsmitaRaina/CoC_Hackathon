@@ -3,14 +3,14 @@ import useFetch from "./useFetch";
 
 const ComplaintDetails = () => {
     const { id } = useParams();
-    const { data: blog, error, isPending } = useFetch('http://localhost:8000/blogs/' + id);
+    const { data: comp, error, isPending } = useFetch('http://localhost:8000/comps/' + id);
     const navigate = useNavigate();
 
     const handleClick = () => {
-        fetch('http://localhost:8000/blogs/' + blog.id, {
+        fetch('http://localhost:8000/comps/' + comp.id, {
             method: 'DELETE'
         }).then(() => {
-            navigate('/events');
+            navigate('/viewcomplaint');
         })
     }
 
@@ -18,18 +18,19 @@ const ComplaintDetails = () => {
         <div className="blog-details">
             {isPending && <div>Loading...</div>}
             {error && <div>{error}</div>}
-            {blog && (
+            {comp && (
                 <article>
-                    <h2>{blog.venue}</h2>
-                    <p>Committee:{blog.organiser}</p>
-                    <p>{blog.description}</p>
-                    <p>{blog.date}</p>
-                    <p>{blog.start_time} to {blog.end_time}</p>
-                    <button onClick={handleClick}>delete</button>
+                    <h2>Name: {comp.name}</h2>
+                    <p>Block No: {comp.block}</p>
+                    <p>Room No: {comp.room_no}</p>
+                    <p>Issue Type: {comp.issuetype}</p>
+                    <p>Complaint Details: {comp.complaint}</p>
+                    <p>Date of Complaint: {comp.date}</p>
+                    <button onClick={handleClick}>Resolved</button>
                 </article>
             )}
         </div>
     );
 }
 
-export default BlogDetails;
+export default ComplaintDetails;

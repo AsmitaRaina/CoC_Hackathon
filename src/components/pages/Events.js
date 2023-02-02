@@ -8,7 +8,7 @@ export default function Events(){
     const {data: blogs, isPending, error} = useFetch("http://localhost:8000/blogs");
     return(
         <>
-        <div className='home'>
+        <div className='events'>
             {/* <h1 style={color='black'}>All Events</h1> */}
             {error && <div>{error}</div>}
             {isPending && <div>Loading...</div>}

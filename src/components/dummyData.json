@@ -1,0 +1,29 @@
+[
+    {
+      "id": 1,
+      "fullName": "Devayani Chandane",
+      "address": "Roha",
+      "phoneNumber": "7420957767",
+      "email": "jenny.chan@email.com",
+      "guardian":"Rajesh Chandane",
+      "guardiancon":"99999922222"
+    },
+    {
+      "id": 2,
+      "fullName": "Jessica warren",
+      "address": "4 tall town",
+      "phoneNumber": "899996543",
+      "email": "jessica.warren@email.com",
+      "guardian":"David Warren",
+      "guardiancon":"99999922222"
+    },
+    {
+      "id": 3,
+      "fullName": "Tony Frank",
+      "address": "11 lesly road",
+      "phoneNumber": "799634428",
+      "email": "tony.frank@email.com",
+      "guardian":"David Frank",
+      "guardiancon":"99999832222"
+    }
+  ]

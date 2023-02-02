@@ -1,30 +1,114 @@
-.userList {
-    flex: 4;
-}
-
-.userListUser {
+.app-container {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 2.5rem;
+
 }
 
-.userListImg {
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    object-fit: cover;
+.app-container table {
+    border-collapse: collapse;
+    width: 100%;
 }
 
-.userListEdit {
-    border: none;
-    border-radius: 10px;
-    padding: 5px 10px;
-    background-color: #3bb077;
+.app-container th {
+    border: 1px solid #ffffff;
+    text-align: left;
+    padding: 6px;
+    font-size: 10px;
+    color: #ffffff;
+}
+.app-container td {
+    border: 1px solid #ffffff;
+    text-align: left;
+    padding: 8px;
+    font-size: 20px;
+    background-color: rgb(205, 235, 253);
+}
+
+
+.app-container form {
+    display: flex;
+    gap: 5px;
+}
+
+.app-container form td:last-child {
+   
+    justify-content: space-evenly;
+}
+
+.app-container form * {
+    font-size: 24px;
+}
+
+.app-container h2{
     color: white;
-    cursor: pointer;
-    margin-right: 20px;
 }
 
-.userListDelete {
-    color: red;
+.app-container input[type=text]{
+    width: 100%;
+    color:black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
     cursor: pointer;
+
+}
+.app-container input[type=email] {
+    width: 100%;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+.new5 button[type=submit]{
+    padding: 20px 20px;
+        margin: 5px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+}
+
+.new5 button[type=submit]:hover {
+    background-color: rgb(71, 71, 226);
+    color: #ffffff;
+    
+
+}
+
+.new5 form{
+    border-radius: 5px;
+    background-color:linear-gradient(#141e30, #243b55);
+    padding: 20px;
+}
+
+button[type=button]{
+    padding: 10px 10px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+
+}
+
+button[type=submit] {
+    padding: 10px 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+button[type=submit]:hover{
+    background-color: rgb(71, 71, 226);
+        color: #ffffff;
+}
+button[type=button]:hover{
+    background-color: rgb(71, 71, 226);
+        color: #ffffff;
 }

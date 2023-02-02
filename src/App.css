@@ -20,11 +20,20 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
- 
+  flex-wrap: nowrap;
+    flex-direction: column;
   color: #fff;
       
 }
 
+.events {
+  background-image: url('./images/fest1.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+
+}
 h1.par{
   font-family: 'Times New Roman', Times, serif;
   font-size: 40px;
@@ -44,7 +53,6 @@ h2.par{
 }  
 
 .blocks{
-  background-image: url('./images/FRAME22.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -55,7 +63,6 @@ h2.par{
 
 
 .contact{
-  background-image: url('./images/FRAME11.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -64,7 +71,6 @@ h2.par{
 }
 
 .Signup {
-  background-image: url('./images/FRAME22.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -75,7 +81,6 @@ h2.par{
 }
 
 .blockA{
-  background-image: url('./images/FRAME22.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -84,21 +89,13 @@ h2.par{
 }
 
 .blockE{
-  background-image: url('./images/FRAME22.jpg');
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
   color: #fff;
   font-size: 100px;
 }
-.events {
-  background-image: url('./images/FRAME22.jpg');
-  background-position: bottom;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #fff;
-  font-size: 100px;
-}
+
 
 .blog-preview {
   padding: 10px 16px;
@@ -126,23 +123,48 @@ h2.par{
   text-decoration: none;
 }
 
-.blog-details h2 {
-  font-size: 20px;
-  color: #f1356d;
-  margin-bottom: 10px;
+.blog-preview p {
+  font-size: 15px;
+  color: #ffffff;
+  margin-bottom: 8px;
+  
+
 }
 
+
+.blog-details h2 {
+  margin-left: 30px;
+  margin-top: 20px;
+  font-size: 30px;
+  color: cyan;
+  margin-bottom: 20px;
+}
+
+
+.blog-details p {
+  margin-left: 30px;
+  font-size: 15px;
+  color: white;
+  margin-bottom: 10px;
+}
 .blog-details div {
   margin: 20px 0;
 }
 
 .blog-details button {
-  background: #f1356d;
+  margin-left: 30px;
+  margin-top: 20px;
+  background:rgb(71, 71, 226);
   color: #fff;
   border: 0;
-  padding: 8px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
   border-radius: 8px;
   cursor: pointer;
+  font-size: 15px;
+  
 }
 
 .create {
@@ -154,12 +176,14 @@ h2.par{
 .create label {
   text-align: left;
   display: block;
+  color: #fff;
 }
 
 .create h2 {
   font-size: 20px;
-  color: #f1356d;
+  color:white;
   margin-bottom: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .create input,
@@ -174,13 +198,14 @@ h2.par{
 }
 
 .create button {
-  background: #f1356d;
-  color: #fff;
+  background-color: rgb(71, 71, 226);
+  color: #ffffff;
   border: 0;
   padding: 8px;
   border-radius: 8px;
   cursor: pointer;
 }
+
 
 .complaint {
   max-width: 400px;
@@ -191,15 +216,22 @@ h2.par{
 .complaint label {
   text-align: left;
   display: block;
+  color: white;
 }
 
 .complaint h2 {
   font-size: 20px;
-  color: #f1356d;
+  color: white;
   margin-bottom: 30px;
+  font-family: Cambria,
+    Cochin,
+    Georgia,
+    Times,
+    'Times New Roman',
+    serif;
 }
 
-.complaint input,
+
 .complaint textarea,
 .complaint select {
   width: 100%;
@@ -211,10 +243,52 @@ h2.par{
 }
 
 .complaint button {
-  background: #f1356d;
+  background: rgb(71, 71, 226);
   color: #fff;
   border: 0;
   padding: 8px;
   border-radius: 8px;
   cursor: pointer;
+}
+
+.complaint input[type=text],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.complaint input[type=date],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.new7 h1 {
+  text-align: left;
+  color: cyan;
+}
+
+.new7 p {
+  font-size: 1.0em;
+  color: rgb(255, 255, 255);
+}
+
+.new7 li {
+  font-size: 1.3em;
+  font-family: Helvetica;
+  color: rgb(255, 255, 255);
+}
+
+.new7{
+  line-height: 26px;
 }

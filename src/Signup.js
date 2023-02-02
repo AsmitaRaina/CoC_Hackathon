@@ -46,37 +46,34 @@ const Signup = ({ setAuth }) => {
   };
 
   return (
-    <Fragment>
-      <h1 className="mt-5 text-center">Register</h1>
-      <form onSubmit={onSubmitForm}>
-        <input
-          type="text"
-          name="email"
-          value={email}
-          placeholder="email"
-          onChange={e => onChange(e)}
-          className="form-control my-3"
-        />
-        <input
-          type="password"
-          name="password"
-          value={password}
-          placeholder="password"
-          onChange={e => onChange(e)}
-          className="form-control my-3"
-        />
-        <input
-          type="text"
-          name="name"
-          value={name}
-          placeholder="name"
-          onChange={e => onChange(e)}
-          className="form-control my-3"
-        />
-        <button className="btn btn-success btn-block">Submit</button>
-      </form>
-      <Link to="/login">login</Link>
-    </Fragment>
+    <div className="login-box">
+       <h2>Register</h2>
+      <form  onSubmit={onSubmitForm}>
+        <div className="user-box">
+
+    <input type="text" name="email" value={email}  required onChange={e => onChange(e)} placeholder="Email"/>
+    
+  </div>
+  <div className="user-box">
+    
+    <input type="password" name="password" required="" value={password} onChange={e => onChange(e)} placeholder="Password"  />
+    
+  </div>
+  <div className="user-box">
+   
+    <input type="text" name="name" required="" value={name} onChange={e => onChange(e)} placeholder="Name"/>
+   
+  </div>
+  <button className="btn btn-success btn-block">Submit</button>
+  <br></br>
+  <div className="new1"><br/>Already Registered?<Link to="/login"><span></span>
+  <span></span><span></span>Login</Link>
+  </div>
+
+</form>
+
+    </div>
+    
     
   );
 };

@@ -1,16 +1,18 @@
-import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import React, { useState } from "react";
 
 const Create = () => {
     
 
-    const [date, setDate] = useState('');
+    const [date, setDate] = useState([]);
+    const[dateformat,setDateformat]=useState('');
     const [organiser, setorganiser] = useState('');
     const [venue, setVenue] = useState('');
     const [start_time, setstarttime] = useState('');
     const [end_time, setendtime] = useState('');
     const [description, setdescription] = useState('');
-
+    
+   
 
 
     const [isPending, setIsPending] = useState(false);
@@ -39,12 +41,11 @@ const Create = () => {
             <form onSubmit={handleSubmit}>
                 <label>Event Date</label>
                 <input 
-                type="text"  
+                type="date"  
                 required
-                value = {date}
+                placeholder="dd-mm-yyyy"
                 onChange = {(e) => setDate(e.target.value)}
                 />
-
                 <label>Event Venue</label>
                 <input 
                 type="text"  
@@ -55,7 +56,7 @@ const Create = () => {
 
                 <label>Start Time</label>
                 <input 
-                type="text"  
+                type="time"
                 required
                 value = {start_time}
                 onChange = {(e) => setstarttime(e.target.value)}
@@ -63,9 +64,9 @@ const Create = () => {
 
                 <label>End Time</label>
                 <input 
-                type="text"  
+                type="time"  
                 required
-                value = {end_time}
+                
                 onChange = {(e) => setendtime(e.target.value)}
                 />
 
@@ -93,3 +94,4 @@ const Create = () => {
 }
  
 export default Create;
+

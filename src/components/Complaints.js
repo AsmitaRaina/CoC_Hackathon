@@ -21,13 +21,13 @@ const Complaints = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        const blog = {name,date,block,room_no,issuetype,complaint};
+        const comp = {name,date,block,room_no,issuetype,complaint};
         setIsPending(true);
 
-        fetch('http://localhost:8000/blogs',{
+        fetch('http://localhost:8000/comps',{
             method: 'Post',
             headers: {"Content-Type": "application/json"},
-            body: JSON.stringify(blog),
+            body: JSON.stringify(comp),
         }).then(() => {
             console.log('new blog added');
             setIsPending(false);
@@ -50,9 +50,8 @@ const Complaints = () => {
 
                 <label>Date Of Complaint</label>
                 <input 
-                type="text"  
+                type="date"  
                 required
-                value = {date}
                 onChange = {(e) => setDate(e.target.value)}
                 />
 
@@ -101,4 +100,3 @@ const Complaints = () => {
 }
  
 export default Complaints;
-

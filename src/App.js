@@ -21,13 +21,14 @@ import Complaints from './components/Complaints';
 import ViewComplaints from './components/pages/ViewComplaints';
 import Login from './Login';
 import Rules from './components/Rules';
+import ComplaintDetails  from './components/ComplaintDetails';
 
 function App() {
   return (
   <Router>
     <Navbar/>
     <Routes>
-      <Route path='/' element={<Home/>}/>
+      <Route path='home' element={<Home/>}/>
       <Route path='/blockA' element={<BlockA/>}/>
       <Route path='/blockE' element={<BlockE/>}/>
       <Route path='/blocks' element={<Blocks/>}/>
@@ -38,14 +39,15 @@ function App() {
       <Route path='/sidebar' element={<Sidebar/>}/>
       <Route path='/sidebar2' element={<Sidebar2/>}/>
       <Route path='/create' element={<Create/>}/>
-      <Route path='/blogdetails' element={<BlogDetails/>}/>
+      <Route path='/blogs/:id' element={<BlogDetails/>}/>
       <Route path='/userlist' element={<UserList/>}/>
       <Route path='/newuser' element={<NewUser/>}/>
       <Route path='/rules' element={<Rules/>}/>
       <Route path='/complaints' element={<Complaints/>}/>
       <Route path='/viewcomplaint' element={<ViewComplaints/>}/>
       <Route path='/user/:id' element={<User/>}/>
-     
+      <Route path='/comps/:id' element={<ComplaintDetails/>}/>
+
     </Routes>
   </Router>
   );
