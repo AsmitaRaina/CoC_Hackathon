@@ -64,7 +64,7 @@ const Signup = ({ setAuth }) => {
     <input type="text" name="name" required="" value={name} onChange={e => onChange(e)} placeholder="Name"/>
    
   </div>
-  <button className="btn btn-success btn-block">Submit</button>
+  <button className="btn btn-success btn-block"><Link to='/login'>Submit</Link></button>
   <br></br>
   <div className="new1"><br/>Already Registered?<Link to="/login"><span></span>
   <span></span><span></span>Login</Link>
