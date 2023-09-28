@@ -1,0 +1,107 @@
+/* Chat.css */
+/* Change the background color of the chat container */
+.rsc-container {
+    background-color: #f0f0f0 !important;
+}
+
+/* Change the text color of user and bot messages */
+.rsc-os-options .rsc-os-option-text,
+.rsc-cm-item {
+    color: #333 !important;
+    background-color: aqua !important;
+}
+
+/* Change the color of the chat input field */
+.rsc-input {
+    border-color: #999 !important;
+}
+
+/* Change the color of the user's message bubble */
+.rsc-cm-text.rsc-cm-user {
+    background-color: #007bff !important;
+    color: #fff !important;
+}
+
+/* Change the color of the bot's message bubble */
+.rsc-cm-text.rsc-cm-bot {
+    background-color: #f0f0f0 !important;
+    color: #333 !important;
+}
+
+.chat{
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    
+
+}
+
+/* const steps=[ {
+    id: 'Greet',
+        message:'Hello,welcome!',
+        trigger:'Ask name'
+}
+
+,
+{
+id: 'Ask name',
+    message:'Please enter your name',
+    trigger:'waiting'
+}
+
+,
+{
+id: 'waiting',
+    user:true,
+    trigger:'Name'
+}
+
+,
+{
+id:'Name',
+message:'Hi! ,{previousValue},whats your query?',
+trigger: 'issue'
+}
+
+,
+{
+
+id:'issue',
+options:[ {
+    value: 'Allotment procedure', label:'Allotment procedure', trigger:'Allotment procedure'
+}
+
+,
+{
+value: 'Timings', label:'Timings', trigger:'Timings'
+}
+
+,
+{
+value: 'Mess', label:'Mess', trigger:'Mess'
+}
+
+,
+{
+value: 'Rooms', label:'Rooms', trigger:'Rooms'
+}
+
+],
+
+}
+
+,
+{
+id: 'Allotment procedure',
+    message:'The students who have already submitted the hostel admissions forms need not submit it again.Hostel admission is for academic year 2023-24 (i.e. tentatively till 31st May 2024). Matrix of seats available for hostel admission is displayed at hostel office. Hostel admissions will be done as per this matrix and merit. Installment of Payment for JMC (applicable for boys hostel) ',
+
+
+    end:true
+}
+
+,
+{
+id: 'Timings',
+    message:'9:00-1:00',
+    end:true
+} */

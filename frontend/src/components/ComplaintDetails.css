@@ -1,0 +1,69 @@
+/* ComplaintDetails.css */
+.blog-deets{
+    display: flex;
+         justify-content: center; 
+        align-items: center;
+        /* Center vertically */
+      
+        
+}
+.cardo {
+    margin-top: 5%;
+    width: 400px;
+    height: 350px;
+    background: dodgerblue;
+    border-radius: 15px;
+    box-shadow: 1px 5px 60px 0px #100a886b;
+    position: relative;
+    color: white;
+    text-align: center;
+}
+
+
+
+.cardo span {
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    display: block;
+    padding-top: 10px;
+    font-size: 16px;
+}
+
+.cardo .job {
+    font-weight: 400;
+    display: block;
+    text-align: center;
+    padding-top: 3px;
+    font-size: 12px;
+}
+
+.cardo .img {
+    width: 70px;
+    height: 80px;
+    background: #6b64f3;
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 25px;
+}
+
+.cardo button {
+    padding: 8px 25px;
+    display: block;
+    margin: auto;
+    border-radius: 8px;
+    border: none;
+    margin-top: 30px;
+    background: black;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+}
+
+.cardo button:hover {
+    background: black;
+}
+.img11{
+    width: 70px;
+    height: 80px;
+}

@@ -1,0 +1,47 @@
+/* Complaints.css */
+.complaint-list {
+    margin: 20px;
+}
+h1
+{
+    color: white;
+}
+
+.card-list {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow cards to wrap to the next line */
+    justify-content: space-between;
+    /* Distribute cards evenly in a row */
+}
+
+.card {
+    background-color: #f0f0f0;
+    border: 5px solid black;
+    padding: 10px;
+    margin: 10px 0;
+    /* Adjust margin for spacing between rows */
+    width: 350px;
+    /* Set width for three cards in a row with margins */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    font-family: 'Times New Roman', serif;
+    transition: box-shadow 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+    margin-bottom: 5px;
+}
+
+.card p {
+    margin: 5px 0;
+}
+
+.card-link {
+    text-decoration: none;
+    color: #333;
+}

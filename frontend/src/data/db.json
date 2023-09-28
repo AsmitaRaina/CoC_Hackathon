@@ -1,0 +1,78 @@
+{
+  "blogs": [
+    {
+      "date": "2023-09-10",
+      "organiser": "",
+      "venue": "Ground",
+      "start_time": "13:10",
+      "end_time": "15:10",
+      "description": "Games",
+      "id": 23
+    },
+    {
+      "date": "2023-09-08",
+      "organiser": "",
+      "venue": "Ground",
+      "start_time": "15:45",
+      "end_time": "16:45",
+      "description": "Holi",
+      "id": 24
+    }
+  ],
+  "comps": [
+    {
+      "name": "Devayani",
+      "date": "3/10/22",
+      "block": "Block E",
+      "room_no": "704",
+      "issuetype": "Cleanliness",
+      "complaint": "Not clean",
+      "id": 3
+    },
+    {
+      "name": "asmita",
+      "date": "2023-02-16",
+      "block": "",
+      "room_no": "703",
+      "issuetype": "",
+      "complaint": "door not working",
+      "id": 9
+    },
+    {
+      "name": "Radha",
+      "date": "2023-08-23",
+      "block": "Block E",
+      "room_no": "705",
+      "issuetype": "Cleanliness",
+      "complaint": "Washroom is not clean",
+      "id": 10
+    },
+    {
+      "name": "Tanaya",
+      "date": "2023-08-13",
+      "block": "Block E",
+      "room_no": "405",
+      "issuetype": "Electrical appliances",
+      "complaint": "Fan not working",
+      "id": 11
+    },
+    {
+      "name": "Nishita",
+      "date": "2023-09-08",
+      "block": "Block E",
+      "room_no": "701",
+      "issuetype": "Electrical appliances",
+      "complaint": "Tubelight not working",
+      "id": 12
+    },
+    {
+      "name": "Rama",
+      "date": "2023-09-09",
+      "block": "Block E",
+      "room_no": "708",
+      "issuetype": "",
+      "complaint": "Lock broke",
+      "id": 13
+    }
+  ]
+}
