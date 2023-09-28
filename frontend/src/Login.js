@@ -65,9 +65,7 @@ const Login = ({ setAuth }) => {
           onChange={e => onChange(e)}
         />
         </div>
-        <Link to='/sidebar'>
-        <button class="btn btn-success btn-block">Submit</button>
-        </Link>
+        <button class="btn btn-success btn-block"><Link to='/sidebar'>Submit</Link></button>
         <br/>
         <div className="new1"><br/>Not Registered?  
         <Link to="/signup">Register</Link>     
